@@ -1,0 +1,8 @@
+version: "4.0"
+services:
+  web:
+    image: nginx:stable-perl
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
